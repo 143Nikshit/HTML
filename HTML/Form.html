@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form </title>
+</head>
+
+<body>
+    <h1>Form Example</h1>
+    <fieldset>
+        <legend><b>Enquiry Form</b></legend>
+        <form action="">
+            <b>NAME:</b> <input type="text" size="20"><br><br>
+            <b>E-mail:</b> <input type="text" size="20"><br><br>
+            <b>Country: </b> <select>
+                <option>India</option>
+                <option>UK</option>
+                <option>US</option>
+            </select><br><br>
+            <b>Gender:</b> <input type="radio" name="Gender" value="male" checked>Male
+            <input type="radio" name="Gender" value="male" checked>Female
+            <br><br>
+            <b>DOB:</b> <input type="date"><br><br>
+            <b>Are you: programmer</b> <input type="checkbox" value="programmer">
+            <b>Web Developer</b> <input type="checkbox" value="Web Developer"><br><br>
+            <b>Message:</b> <br><br> <textarea name="Message" cols="20" rows="5"></textarea>
+            <br><br>
+            <label for="Course">Select Courses:</label>
+            <select name="Course" id="Course">
+                <optgroup label="Programing">
+                    <option value="C">C Programing</option>
+                    <option value="C++">C++ Programming </option>
+                    <option value="Java">Java Programing</option>
+                </optgroup>
+                <optgroup label="Web Development">
+                    <option value="JavaScriptt">JavaScript</option>
+                    <option value="Python">Python</option>
+                </optgroup>
+            </select><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </fieldset>
+</body>
+
+</html>
