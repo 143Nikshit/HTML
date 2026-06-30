@@ -1,42 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Coding</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: none;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            background: white;
+            width: 350px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+        h2{
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 20px;
+        }
+        label{
+            float: left;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input[ type="text" ],
+        input[ type="password" ]{
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            transition: o.3s;
+        }
+        input[ type="text" ]:hover,
+        input[ type="password" ]:hover{
+            border-color: rgb(85, 85, 246);
+        }
+        input[type="submit"]{
+            width: 100%;
+            padding: 12px;
+            background: rgb(12, 12, 228);
+            color: white;
+            border: none;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        input [type="submit"]:hover{
+            background: rgb(4, 4, 150);
+        }
+        p{
+            margin-top: 15px;
+            color: #333;
+            font-size: 13px;
+        }
+        a{
+            color: blue;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a.hover{
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
-    <!-- Header Section  -->
-    <header>
-        <div style="display:flex; align-items:center; gap:8px;">
-            <img src="./logo.avif" alt="Web_Logo" height="50px" width="50px" style="border-radius:50%">
-            <span>Learn Coding</span>
-        </div>
-        <nav align="right" >
-                <a href="./index.html">Home</a>
-                <a href="./contact.html">Contact</a>
-                <a href="./media.html">Media</a>
-                <a href="./login.html">Login</a>
-            </nav>
-    </header> <br>
+    <div class="container">
+        <h2>Login</h2>
 
-    <h2>Login</h2>
-    <form action="">
-        <label>User Name:</label> <br>
-        <input type="text" placeholder="Enter Your Name" required><br> <br>
+        <form>
+            <label>User Name:</label>
+            <input type="text" placeholder="Enter Your Name" required><br> <br>
 
-        <label for="text" required>Password:</label> <br>
-        <input type="text" placeholder="Enter Password" required><br> <br>
+            <label>Password:</label> <br>
+            <input type="password" placeholder="Enter Password" required><br> <br>
 
-        <button>Login</button>
+            <input type="submit" value="Login">
+
+        </form>
         <p>New account? <a href="signup.html">Signup here</a></p>
-    </form>
-    
-    <hr>
-     <!-- Footer Section -->
-    <footer align="center">
-        <p> &copy; 2025 | All Rights Reserved</p>
-    </footer>
-
+    </div>
 </body>
+
 </html>

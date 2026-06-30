@@ -4,12 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: none;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            width: 350px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 20px;
+        }
+
+        label {
+            float: left;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[ type="text"],
+        input[ type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            transition: o.3s;
+        }
+
+        input[ type="text"]:hover,
+        input[ type="password"]:hover {
+            border-color: rgb(85, 85, 246);
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background: rgb(12, 12, 228);
+            color: white;
+            border: none;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input [type="submit"]:hover {
+            background: rgb(4, 4, 150);
+        }
+
+        p {
+            margin-top: 15px;
+            color: #333;
+            font-size: 13px;
+        }
+
+        a {
+            color: blue;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a.hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive fixes */
+        @media (max-width: 400px){
+            .container{
+                padding: 20px;
+            }
+            h2{
+                font-size: 24px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Form Example</h1>
-    <fieldset>
-        <legend><b>Enquiry Form</b></legend>
-        <form action="">
+    <div>
+        <form>
             <b>NAME:</b> <input type="text" size="20"><br><br>
             <b>E-mail:</b> <input type="text" size="20"><br><br>
             <b>Country: </b> <select>
@@ -23,7 +117,6 @@
             <b>DOB:</b> <input type="date"><br><br>
             <b>Are you: programmer</b> <input type="checkbox" value="programmer">
             <b>Web Developer</b> <input type="checkbox" value="Web Developer"><br><br>
-            <b>Message:</b> <br><br> <textarea name="Message" cols="20" rows="5"></textarea>
             <br><br>
             <label for="Course">Select Courses:</label>
             <select name="Course" id="Course">
@@ -38,8 +131,7 @@
                 </optgroup>
             </select><br><br>
             <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
         </form>
-    </fieldset>
+    </div>
 </body>
 </html>

@@ -17,7 +17,7 @@
             </a>
             <span class="logo-text">Learn Coding</span>
         </div>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <a href="./index.html" class="nav-link">Home</a>
             <a href="./contact.html" class="nav-link">Contact</a>
             <a href="./media.html" class="nav-link">Media</a>
@@ -27,7 +27,7 @@
         </nav>
 
         <!-- Navbar(Mobile Only) -->
-         <div class="hamburger">
+         <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
             <span></span>
@@ -102,8 +102,19 @@
     </footer>
 
     <script>
+
+        // Hamburger Logic
+        const hmburger = document.getElementById("hamburger")
+        const navbar = document.getElementById("navbar")
+
+        hmburger.addEventListener("click", ()=> {
+            navbar.classList.toggle("active")
+            hmburger.classList.toggle("open")
+        })
+        //Scroll Logic
+        const header = document.getElementById("header")
         window.addEventListener("scroll", () => {
-            if (window.screenY > 20) {
+            if (window.scrollY>20) {
                 header.classList.add("scrolled")
             } else {
                 header.classList.remove("scrolled")
